@@ -43,6 +43,7 @@
 //         console.log(` story na ${x}`);
 // }
 
+
 // for of: note that array is seen as an object here
 // helps to loop tru each item of an array, charAt(0) helps to get the first index of each item in the array
 // slice 1 helps to call out each item of the array
@@ -52,6 +53,7 @@
 //     console.log(upperDay);
 // }
 // for of does not take in a callback function
+
 
 //  using Array and .length
 // const colors = ["yellow", "green", "blue", "indigo", "violet"];
@@ -64,6 +66,19 @@
 // Destructuring
 // const music =["Tupac", "Bob Marley", "Fela", "Idibia", "Chioma Jesus"];
 //       const[Rap, Raggae, Afro, rnb, Gospel] = music
+//  or
+
+// const [Rap, Raggae, Afro, rnb, Gospel] = ["Tupac", "Bob Marley", "Fela", "Idibia", "Chioma Jesus"];
+//  console.log(Rap);
+
+// How to skip value in an array
+// note that the carrot, apple and p.apple were skipped and kuk was called out singlehandedly
+// let [tomati, , , , kuku] = ["taomato", "carrot", "apple", "pineapple", "cuccumber"];
+// console.log(kuku);
+
+// Array Nesting
+    //  let fruits = ["taomato", "carrot", "apple", ["pineapple", "cuccumber"]];
+    //  console.log(fruits[3][1]);
 
 // spread operator
 // const music =["Tupac", "Bob Marley", "Fela", "Idibia", "Chioma Jesus"];
@@ -180,6 +195,16 @@
 // Js Methods :
 // remember that mthds are functions written in an object, also remember that typeOf(array) is object.
 
+// sort()
+// to sort values from the lowest to the highest, you have to first write a function to define lower and upper values a,b
+// you can do b-a too i.e higest to lowest, note that that is not the same as reverse
+// const numbers = [23, 5, 100, 56, 9, 13, 37, 10, 1];
+// function ascendingComp(a, b){
+//     return (a-b);
+//   }
+//   numbers.sort(ascendingComp);
+
+
 // Looping tru an array
 
 // find () - find mthd is used to find an element in an array then u return the item
@@ -257,11 +282,10 @@
 //      }
 // ] 
 
-// const bio = persons.find(findGab).age;
-
 // function findGab(person){
 //     return person.name === "Gab";
 //     }
+// const bio = persons.find(findGab).age;
 //  console.log(bio);
 
 
@@ -349,7 +373,6 @@
 //     }
 // })
 // console.log(getPrice);
-
 
 
 // Get only the first name of each academic
@@ -481,8 +504,13 @@
 // const inputAnser = prompt("What did you score in Jamb!");
 
 // Example 2:
-// let A="Distinction"; B="Very-Good "; C="Good"; D="Pass"; F="Fail";
+// let A="Distinction"; 
+// B="Very-Good "; 
+// C="Good"; 
+// D="Pass";
+//  F="Fail";
 // let jambScore = prompt("Enter your Jamb score");
+
 // if (jambScore >=70 && jambScore <=100){
 //     alert(`Your have grade A = ${A}`)
 // } else if (jambScore >=60 && jambScore <=69) {
@@ -581,7 +609,7 @@
 // const tolu = {
 //     surname: "Babalola",
 //     age: 30,
-//      habit: function () {
+//     habit: function () {
 //         console.log('The surname is' + ' ' + this.surname + ' ' + 'she can greet for Africa');
 //     }
 // };
