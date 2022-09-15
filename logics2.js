@@ -35,7 +35,7 @@
 
 
 // setTimeOut()
-// used for counter, animation and other timing effects, it takes a funtion, the itself will be used in another 
+// used for counter, animation and other timing effects, it takes a funtion, then itself will be used in another 
 // function which does the main 
 // actually, the program waits for the specified time before it takes effect
 // function timeOut() {
@@ -69,10 +69,10 @@
 
 
 // JSON.stringify()
-// Note: if the date to be stored is an array or object you have to convert to string using JSON.stringify()
+// Note: if the data to be stored is an array or object you have to convert to string using JSON.stringify()
 
 // const people = ["James", "Jane", "Jack", "Jill"];
-// localStorage.setItem("myStorage2", JSON.stringify(people));
+// localStorage.setItem("myStore", JSON.stringify(people));
 
 
 // const Babs = {
@@ -83,19 +83,20 @@
 // }
 // localStorage.setItem("family", JSON.stringify(Babs));
 
+
 // // getItem() - to retreive data from local storage 
 //  console.log(localStorage.getItem("family"));
 
 
 // // removeItem() - to remove every detail from browser
-// console.log(localStorage.removeItem("myStorage2"));
-// common sense says getItem() before using delete
+// console.log(localStorage.removeItem("myfamily"));
+// common sense says getItem() before using removeItem()
 
 
 // // clear()- clear all items in local storage
 // console.log(localStorage.clear());
 
-// key()- pass a number to rtreive key from local storage
+// key()- pass a number to retreive key from local storage
 
 // Limitation of Local Storage
 //sensitive data can't be stored here
@@ -121,9 +122,12 @@
 // getElemenenstByClassName()
 // Example 1:
 // const jesusChrist = document.getElementsByClassName("Jesus");
-// for (jesus of jesusChrist){
-//     console.log(jesus);
-// }
+// let savior = console.log(jesusChrist);
+
+// let named = savior.map(function(item){
+//     return item === "so";
+//     });
+//     console.log(named);
 
 // getElementByTageName()
 // Example 
@@ -156,7 +160,7 @@
 // Traversing(Navigating) the DOM from parent to Children
 // .childNodes
 
-// This gives NodeList of  tetxs and links which are children of parent primary
+// This gives NodeList of tetxs and links which are children of parent primary
 // const navigation = document.querySelector("#primary");
 // let element = navigation.childNodes;
 // console.log(element);
@@ -193,7 +197,7 @@
 // console.log(list);
 
 // In styling css with JS DOM, camels casing is used for any stylename with two words e.g background-color 
-// is backgroundColor, text-decoration is textDecoration ect.
+// is backgroundColor, text-decoration is textDecoration etc.
 
 // Adding class to Id elements, note class works but id name still shows on the console
 
@@ -213,6 +217,7 @@
 // talk.classList.add("eyimba"); 
 
 
+
 // // To add multiple class names. it adds all the css properties of arsenal, manu and chelsea to the informate id.
 // // this prevents rewritting alsready existign css properties
 // talk.classList.add("arsenal", "manu", "chelsea"); 
@@ -225,6 +230,8 @@
 // talk.classList.remove("arsenal", "chelsea");
 
 // // to check if a class name exists
+// let talk = document.getElementById("informate");
+// talk.classList.add("eyimba");
 // if(talk.classList.contains("eyimba")){
 // alert("I dey!");
 // }
@@ -237,7 +244,7 @@
 
 
 
-// OTHER DOM MANIPULATION
+// OTHER DOM MANIPULATIONS
 
 // creating elements ()
 // create an anchor tag, div, h1 in an existing project
@@ -264,7 +271,7 @@
 // console.log(myLink)
 
 // alternatively innerHTML does the same thing but it is used when content includes html tags
-// myLink.textContent = "<p>Go to w3schools</p>"
+// myLink.innerHTML = "<p>Go to w3schools</p>"
 // console.log(myLink)
 
 // since myLink above has no parent element yet, you can append to the body
@@ -302,3 +309,19 @@
 // yourHead.removeAttribute("class");
 // console.log(yourHead);
 
+// Example 2:
+// let me = document.createElement("img");
+// let yeh = me.setAttribute("Id", "Tobi");
+// me
+// // To receive the right result, don't console.log me, just call it directly. 
+
+
+
+
+const jesusChrist = document.getElementsByClassName("Jesus");
+let savior = console.log(jesusChrist);
+
+let named = savior.map(function(item){
+    return item === "so";
+    });
+    console.log(named);

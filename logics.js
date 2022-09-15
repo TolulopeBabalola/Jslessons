@@ -46,7 +46,7 @@
 
 // for of: note that array is seen as an object here
 // helps to loop tru each item of an array, charAt(0) helps to get the first index of each item in the array
-// slice 1 helps to call out each item of the array
+// slice (1) returns each array value having sliced out the first letter
 // const days = ["monday", "tues", "wed", "thurs"];
 // for (const day of days){
 //     var upperDay = day.charAt(0).toUpperCase() + day.slice(1);
@@ -72,7 +72,7 @@
 //  console.log(Rap);
 
 // How to skip value in an array
-// note that the carrot, apple and p.apple were skipped and kuk was called out singlehandedly
+// note that the carrot, apple and p.apple were skipped and kuku was called out singlehandedly
 // let [tomati, , , , kuku] = ["taomato", "carrot", "apple", "pineapple", "cuccumber"];
 // console.log(kuku);
 
@@ -96,14 +96,18 @@
 
 
 // Js FUnctions 
-// functions are reusable elements hence prevents programmer from writng same codea again and again to get sthng done
+// functions are reusable elements hence prevents programmer from writng same code again and again to get sthng done
+
+// https://stackhowto.com/list-of-javascript-functions/
 
 // ES5 functions 
+// note that the return keyword works with functions
 // function people (){
 //    return(whatever);
 //  }
 // people(); 
 // note that people(); is known as function invocation, functions won't work except they are invoked
+// (sthng1, sthng2) are function parameters, they can be as many as needed
 
 // Example:
 //  function people (a,b){     
@@ -112,10 +116,38 @@
 // people(3,5);  
 
 
+// Example 1:
+// function greet(myname) {
+//    document.write(`${myname}`);
+// }
+
+// // this helps to supply names from users, you know that as the programmer you have to look
+// // for a way to collect names for program to function
+// let myname = prompt("Enter your name: ");
+
+// // calling function
+// greet(myname);
+
+
+
+// more neatly
+// function greet(myname) {
+//     return (`${myname}`);
+//  }
+
+//  let myname = prompt("Enter your name: ");
+
+//  greet(myname);
+
+
+
+
 // Example 2:
 // function student (name, surname, matric){
 // return (`My name is ${name} ${surname} with the matric no ${matric}`);
 // }
+
+// student("Jack", "Jill", "MET/11/4699");
 // console.log(student("Jack", "Jill", "MET/11/4699"));
 // console.log(student("Tolu", "Craig", "MET/11/0096"));
 // console.log(student("Bayo", "Dims", "MET/11/9899"));
@@ -524,15 +556,16 @@
 //     }
 
 // JS Classes
-// To define a class put the keyword 'class' and the name of the class wihich starts with capital letter
+// To define a class put the keyword 'class' and the name of the class which starts with capital letter
 // followed by the constructor () method
 // Note: constructor() holds variables and the variables are fecthed using the 'this' keyword
+
 // Example 1:
 // class Car {
 //     constructor(name, color, model){
 //         this.name = name;
 //         this.color = color;
-//         this.model = model;
+//      this.model = model;
 //     }
 // }
 // let myCar1 = new Car("Toyota", "blue");
@@ -581,13 +614,11 @@
 //         console.log(`${this.name} is our new ${this.prefect}`);
 //     }
 // }
-
 // // students will inherit every method of the parent Class
 // class Student extends Person {
 
 // }
-
-// // create an instance of students
+// create an instance of students
 // const myStudent1 = new Student("Bayo", "Head Boy");
 // const myStudent2 = new Student("Tolu", "Head Girl");
 // console.log(myStudent1.greet(),myStudent1.office());
@@ -626,9 +657,9 @@
 
 //     }
 // ]
-
 // // availableCars[0].carName;
-// delete availableCars.quantity;
+// delete availableCars[0].quantity;
+
 
 // Object Destructuring
 // const person = {

@@ -11,6 +11,40 @@
     font-weight: 700;
     color: red;
 }
-.visible{
-    
+
+.toggle{
+    display: none;
+}
+
+.secret{
+    color: white;
+    background-color: orange;
+    font-size: 1.3rem;
+    border: 1px solid white;
+    padding: 3px 15px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.open {
+    color: white;
+    background-color: orange;
+    font-size: 1.3rem;
+    border: 1px solid white;
+    padding: 3px 15px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form2{
+    border: 1px solid brown;
+    border-radius: 8px;
+    margin-top: 15px;
+    width: 50%;
+    padding: 5px 0px 5px 10px;
+}
+
+.output{
+   color: red;
+   font-size: 1.9rem;
+   font-family: roboto;
 }
